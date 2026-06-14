@@ -525,21 +525,26 @@ Rules:
 
         try:
 
-            response = model.generate_content(
-                prompt,
-                generation_config=genai.GenerationConfig(
-                    temperature=temperature
-                )
-            )
+          response = model.generate_content(
+           prompt,
+            generation_config=genai.GenerationConfig(
+            temperature=temperature
+        )
+    )
 
-            response_text = response.text
+          response_text = response.text
 
         except Exception as e:
+
          if "429" in str(e):
-          st.error("Gemini rate limit exceeded. Please wait a minute and try again.")
-        else:
+          st.error(
+            "Gemini rate limit exceeded. Please wait a minute and try again."
+        )
+
+         else:
           st.error(f"Error: {e}")
-          st.stop()
+
+         st.stop()
 
     # STATS
 
