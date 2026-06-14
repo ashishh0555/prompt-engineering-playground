@@ -85,6 +85,14 @@ Using the same input topic.
 
 Demonstrates how changing the temperature parameter affects LLM creativity and output style.
 
+### Prompt Analysis
+
+Displays:
+- Prompt Length
+- Character Count
+- Prompt Complexity Indicators
+- Response Statistics
+
 ---
 
 ## 🧪 Prompt Engineering Concepts Demonstrated
@@ -99,6 +107,22 @@ Demonstrates how changing the temperature parameter affects LLM creativity and o
 | Temperature Control | Temperature Experimentation                                |
 
 ---
+
+## 🔄 Application Workflow
+
+User Input
+↓
+Prompt Template Selection
+↓
+Prompt Construction
+↓
+Gemini 2.5 Flash
+↓
+Response Generation
+↓
+Prompt Analysis & Statistics
+↓
+History Storage & Download
 
 ## 🛠 Tech Stack
 
@@ -124,7 +148,15 @@ Demonstrates how changing the temperature parameter affects LLM creativity and o
 
 ![Compare Prompt Styles](screenshots/prompt_tech.jpeg)
 
+### Temperature Experiment
+
+![Temperature Experiment](screenshots/temperature_experiment.jpeg)
+
 ---
+
+## 🌐 Live Demo
+
+[Try the App Here](https://prompt-engineering-playground-htpjbvmmgzh9fz6jylbe7t.streamlit.app/)
 
 ## ⚙️ Installation
 
@@ -191,5 +223,3 @@ MIT Manipal (Mechatronics)
 
 GitHub:
 https://github.com/ashishh0555
-
-Built using Streamlit and Google's Gemini API.

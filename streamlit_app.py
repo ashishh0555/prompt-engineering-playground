@@ -81,7 +81,7 @@ Temperature Controls Creativity
 
     st.divider()
 
-    st.subheader("📚 Prompt Engineering Concepts")
+    st.subheader("📚 Implemented Features")
 
     st.markdown("""
 ✅ Persona Prompting
