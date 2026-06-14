@@ -261,6 +261,7 @@ Tone: Incisive, deeply reasoned, professional, and pragmatic. Do not use generic
                st.session_state.history.pop(0)
 
             st.stop()
+            st.success("✅ Prompt comparison completed")
 
     elif feature == "Temperature Experiment":
 
@@ -277,28 +278,28 @@ Structure your response into these 4 technical layers:
 1.  **The First Principles (The 'What')**: Define the topic using correct mathematical or engineering terminology. Avoid analogies here; focus on the literal mechanism or architecture.
 2.  **The Structural Logic (The 'How')**: Break down the core components or the workflow. Use a step-by-step or modular breakdown of how the data or logic flows through this system.
 3.  **The Engineering Trade-offs**: This is critical. Explain the "Cost vs. Benefit." What are the limitations (e.g., computational overhead, latency, gradient instability)? What are the alternatives?
-4.  **Implementation Gist**: Provide a brief, high-level pseudocode snippet or a logical outline of how this would be implemented in a production environment (e.g., using PyTorch, JAX, or a standard systems design).
 
 Rules:
 - Maintain a blunt, no-nonsense tone. 
 - Eliminate all conversational filler, "I hope this helps," or introductory fluff.
 """
+        with st.spinner("Running temperature experiment..."):
 
-        cold_response = model.generate_content(
+         cold_response = model.generate_content(
                 prompt,
                 generation_config=genai.GenerationConfig(
                     temperature=0.0
                 )
             )
 
-        balanced_response = model.generate_content(
+         balanced_response = model.generate_content(
                 prompt,
                 generation_config=genai.GenerationConfig(
                     temperature=0.7
                 )
             )
 
-        creative_response = model.generate_content(
+         creative_response = model.generate_content(
                 prompt,
                 generation_config=genai.GenerationConfig(
                     temperature=1.5
@@ -350,6 +351,7 @@ Rules:
          st.session_state.history.pop(0)
         
         st.stop()
+        st.success("✅ Temperature experiment completed")
      
 
 
