@@ -117,12 +117,12 @@ Demonstrates how changing the temperature parameter affects LLM creativity and o
 
 ### Explain like I'm 5
 
-![Image 1](screenshots/eli5_1.png)
-![Image 2](screenshots/eli5_2.png)
+![Image 1](screenshots/eli5_1.jpeg)
+![Image 2](screenshots/eli5_2.jpeg)
 
 ### Compare Prompt Styles
 
-![Compare Prompt Styles](screenshots/prompt_tech.png)
+![Compare Prompt Styles](screenshots/prompt_tech.jpeg)
 
 ---
 
